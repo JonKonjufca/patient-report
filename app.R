@@ -113,6 +113,8 @@ source("utility_functions/makeTreeStructure.R")
        questListData[[1]]  <- instrumentLopf97Ger3(dfFullAss())
        questListData[[2]]  <- instrumentPhq9En3(dfFullAss())
        questListData[[3]]  <- instrumentBPFSC24En(dfFullAss())
+       questListData[[4]]  <- instrumentPtsd20En(dfFullAss())
+
        questListData = questListData %>% compact() # Remove NULL Lists
 
         if (is.null(questListData) | length(questListData) == 0) {
